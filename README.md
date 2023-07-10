@@ -4,11 +4,11 @@ Este é um projeto de Machine Learning que tem como objetivo prever os traços d
 ## Descrição
 O modelo desenvolvido neste projeto utiliza técnicas de aprendizado de máquina para prever os traços de personalidade com base em um conjunto de características fornecidas pelo usuário. Os traços de personalidade são definidos da seguinte forma:
 
-1. Openness to experience: Indica se a pessoa é mais inclinada a ser aberta, curiosa e disposta a experimentar coisas novas, ou se é mais consistente e cautelosa em suas ações.
-2. Conscientiousness: Reflete se a pessoa é mais eficiente, organizada e orientada a resultados, ou se é mais descontraída e descuidada em suas atividades.
-3. Extroversion: Avalia se a pessoa é mais extrovertida, energética e sociável, ou se é mais reservada e introvertida.
-4. Agreeableness: Determina se a pessoa é mais amigável, compassiva e cooperativa, ou se é mais desafiadora e distante em suas interações sociais.
-5. Neuroticism: Indica se a pessoa é mais sensível, nervosa e propensa à ansiedade, ou se é mais segura e confiante em suas emoções e reações.
+1. **Openness to experience**: Indica se a pessoa é mais inclinada a ser aberta, curiosa e disposta a experimentar coisas novas, ou se é mais consistente e cautelosa em suas ações.
+2. **Conscientiousness**: Reflete se a pessoa é mais eficiente, organizada e orientada a resultados, ou se é mais descontraída e descuidada em suas atividades.
+3. **Extroversion**: Avalia se a pessoa é mais extrovertida, energética e sociável, ou se é mais reservada e introvertida.
+4. **Agreeableness**: Determina se a pessoa é mais amigável, compassiva e cooperativa, ou se é mais desafiadora e distante em suas interações sociais.
+5. **Neuroticism**: Indica se a pessoa é mais sensível, nervosa e propensa à ansiedade, ou se é mais segura e confiante em suas emoções e reações.
 
 ## Bibliotecas Utilizadas
 

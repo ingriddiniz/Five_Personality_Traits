@@ -1,27 +1,27 @@
 # Five Personality Traits (OCEAN) Prediction using Machine Learning
 ![Personalidades](personalidades.png)
 
-Este é um projeto de Machine Learning que tem como objetivo prever os traços de personalidade de uma pessoa com base nos Five Personality Traits, também conhecidos como OCEAN (Openness to experience, Conscientiousness, Extroversion, Agreeableness, Neuroticism).
+This is a Machine Learning project aimed at predicting a person's personality traits based on the Five Personality Traits, also known as OCEAN (Openness to experience, Conscientiousness, Extroversion, Agreeableness, Neuroticism).
 
 
 ## Five Personalite Traits
 
-Os Cinco Grandes traços de personalidade são uma taxonomia proposta para descrever a personalidade humana. Eles incluem abertura à experiência, conscienciosidade, extroversão, agradabilidade e neuroticismo. Esses traços representam diferentes aspectos da personalidade e são identificados com base em associações semânticas encontradas na linguagem comum. As pessoas podem exibir diferentes graus de cada traço, e eles são colocados em um continuum. Em resumo, os Cinco Grandes traços de personalidade são uma maneira de categorizar e descrever os aspectos fundamentais da personalidade humana.<br>
-*Fonte* [Wikipedia](https://en.wikipedia.org/wiki/Big_Five_personality_traits)
-## Conjunto de Dados
-O conjunto de dados utilizado para desenvolver este projeto de Machine Learning contém 1.015.342 respostas a questionários coletados on-line pela [Psicometria Aberta](https://openpsychometrics.org/tests/IPIP-BFFM/).
+The Five Big personality traits are a proposed taxonomy for describing human personality. They include openness to experience, conscientiousness, extroversion, agreeableness, and neuroticism. These traits represent different aspects of personality and are identified based on semantic associations found in common language. People can exhibit different degrees of each trait, and they are placed on a continuum. In summary, the Five Big personality traits are a way to categorize and describe fundamental aspects of human personality.<br>
+*Source* [Wikipedia](https://en.wikipedia.org/wiki/Big_Five_personality_traits)
+## Dataset
+The dataset used to develop this Machine Learning project contains 1,015,342 questionnaire responses collected online by Open Psychometrics. [Psicometria Aberta](https://openpsychometrics.org/tests/IPIP-BFFM/).
 
-## Descrição
-O modelo desenvolvido neste projeto utiliza técnicas de aprendizado de máquina para prever os traços de personalidade com base em um conjunto de características fornecidas pelo usuário. Os traços de personalidade são definidos da seguinte forma:
+## Description
+The model developed in this project uses machine learning techniques to predict personality traits based on a set of user-provided features. The personality traits are defined as follows:
 
-1. **Openness to experience**: Indica se a pessoa é mais inclinada a ser aberta, curiosa e disposta a experimentar coisas novas, ou se é mais consistente e cautelosa em suas ações.
-2. **Conscientiousness**: Reflete se a pessoa é mais eficiente, organizada e orientada a resultados, ou se é mais descontraída e descuidada em suas atividades.
-3. **Extroversion**: Avalia se a pessoa é mais extrovertida, energética e sociável, ou se é mais reservada e introvertida.
-4. **Agreeableness**: Determina se a pessoa é mais amigável, compassiva e cooperativa, ou se é mais desafiadora e distante em suas interações sociais.
-5. **Neuroticism**: Indica se a pessoa é mais sensível, nervosa e propensa à ansiedade, ou se é mais segura e confiante em suas emoções e reações.
+1. **Openness to experience**:Indicates whether a person is more inclined to be open, curious, and willing to try new things or if they are more consistent and cautious in their actions.
+2. **Conscientiousness**:  Reflects whether a person is more efficient, organized, and goal-oriented or if they are more relaxed and careless in their activities.
+3. **Extroversion**:Evaluates whether a person is more outgoing, energetic, and sociable or if they are more reserved and introverted.
+4. **Agreeableness**: Evaluates whether a person is more outgoing, energetic, and sociable or if they are more reserved and introverted.
+5. **Neuroticism**: Indicates whether a person is more sensitive, nervous, and prone to anxiety or if they are more secure and confident in their emotions and reactions.
 
-## Funcionalidades
-O projeto utiliza a biblioteca Gradio para criar uma interface interativa para o teste de previsão dos traços de personalidade. Através dessa interface, o usuário pode fornecer os valores de cada uma das características (Openness, Conscientiousness, Extroversion, Agreeableness e Neuroticism) e obter as previsões dos traços de personalidade correspondentes.
+## Features
+The project utilizes the Gradio library to create an interactive interface for personality trait prediction testing. Through this interface, the user can provide the values for each of the characteristics (Openness, Conscientiousness, Extroversion, Agreeableness, and Neuroticism) and obtain predictions for the corresponding personality traits.
 
-## Conclusão
-Este projeto de Machine Learning oferece uma interface amigável para prever os traços de personalidade de uma pessoa com base nos Five Personality Traits (OCEAN). Utilizando a biblioteca Gradio, os usuários podem facilmente fornecer as características e receber previsões imediatas. Esperamos que este projeto seja útil para a compreensão e aplicação dos conceitos de previsão de traços de personalidade e possa ser personalizado e aprimorado para atender às necessidades específicas de diferentes usuários.
+## Conclusion
+This Machine Learning project provides a user-friendly interface for predicting a person's personality traits based on the Five Personality Traits (OCEAN). By using the Gradio library, users can easily provide the characteristics and receive immediate predictions. We hope that this project proves useful for understanding and applying personality trait prediction concepts and can be customized and enhanced to meet the specific needs of different users.

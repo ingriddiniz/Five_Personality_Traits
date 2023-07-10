@@ -2,7 +2,7 @@
 Este é um projeto de Machine Learning que tem como objetivo prever os traços de personalidade de uma pessoa com base nos Five Personality Traits, também conhecidos como OCEAN (Openness to experience, Conscientiousness, Extroversion, Agreeableness, Neuroticism).
 
 ## Conjunto de Dados
-Este conjunto de dados contém 1.015.342 respostas a questionários coletados on-line pela [Psicometria Aberta] (https://openpsychometrics.org/tests/IPIP-BFFM/).
+Este conjunto de dados contém 1.015.342 respostas a questionários coletados on-line pela [Psicometria Aberta](https://openpsychometrics.org/tests/IPIP-BFFM/).
 
 ## Descrição
 O modelo desenvolvido neste projeto utiliza técnicas de aprendizado de máquina para prever os traços de personalidade com base em um conjunto de características fornecidas pelo usuário. Os traços de personalidade são definidos da seguinte forma:

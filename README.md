@@ -1,4 +1,5 @@
 # Five Personality Traits (OCEAN) Prediction using Machine Learning
+
 Este é um projeto de Machine Learning que tem como objetivo prever os traços de personalidade de uma pessoa com base nos Five Personality Traits, também conhecidos como OCEAN (Openness to experience, Conscientiousness, Extroversion, Agreeableness, Neuroticism).
 
 

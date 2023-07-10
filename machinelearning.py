@@ -138,7 +138,7 @@ data_soma['clusters'] = predicoes
 
 data_soma.groupby('clusters').mean()
 
-"""Vizlualizando as médias por grupo"""
+"""Visualizing the averages per group"""
 
 data_clusters = data_soma.groupby('clusters').mean()
 
@@ -151,7 +151,7 @@ for i in range(0, 5):
     plt.xticks(rotation=45)
     plt.ylim(0,4);
 
-"""Instalando a biblioteca gradio"""
+"""Installing the Gradio library"""
 
 !pip install gradio
 
@@ -159,11 +159,11 @@ import gradio as gr
 
 dicio_questions = open("questions.txt").read().split("\n")
 
-"""Verificando os dados."""
+"""Checking the data."""
 
 dicio_questions
 
-"""Limpando os dados e recuperando apenas as questões"""
+"""Criando a interface e a função predict."""
 
 questions = []
 for q in dicio_questions:
@@ -172,18 +172,18 @@ for q in dicio_questions:
 
 questions
 
-"""Criando os inputs dinamicos para passar ao gradio"""
+"""Creating the dynamic inputs to pass to Gradio"""
 
 inputs_questions = []
 for q in questions:
   obj_input = gr.inputs.Slider(minimum=1,maximum=5,step=1,default=3,label=q)
   inputs_questions.append(obj_input)
 
-"""Verificando os inputs"""
+"""Checking the inputs"""
 
 inputs_questions
 
-"""Criando a interface e a função predict."""
+"""Creating the interface and the predict function."""
 
 def predict(*outputs_questions):
     outputs_questions = np.array(outputs_questions).reshape(1, -1)

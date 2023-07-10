@@ -3,7 +3,7 @@ Este é um projeto de Machine Learning que tem como objetivo prever os traços d
 
 
 ## Five Personalite Traits
-Fonte [Wikipedia](https://en.wikipedia.org/wiki/Big_Five_personality_traits)
+Fonte [Wikipedia](https://en.wikipedia.org/wiki/Big_Five_personality_traits)<br>
 Os Cinco Grandes traços de personalidade são uma taxonomia proposta para descrever a personalidade humana. Eles incluem abertura à experiência, conscienciosidade, extroversão, agradabilidade e neuroticismo. Esses traços representam diferentes aspectos da personalidade e são identificados com base em associações semânticas encontradas na linguagem comum. As pessoas podem exibir diferentes graus de cada traço, e eles são colocados em um continuum. Em resumo, os Cinco Grandes traços de personalidade são uma maneira de categorizar e descrever os aspectos fundamentais da personalidade humana.
 
 ## Conjunto de Dados

@@ -15,7 +15,7 @@ Five Personality Traits(OCEAN)
 *   Agreeableness (friendly/compassionate vs. challenging/detached)
 *   Neuroticism (sensitive/nervous vs. secure/confident)
 
-Importando as bibliotecas
+Importing the libraries
 """
 
 import numpy as np
@@ -26,95 +26,95 @@ import os
 from io import open
 pd.options.display.max_columns=150
 
-"""Carregando o Dataset"""
+"""Loading the Dataset"""
 
 data = pd.read_csv('data-final.csv', sep='\t')
 
-"""Verificando o Dataset"""
+"""Checking the Dataset"""
 
 data.head()
 
-"""Excluindo os atributos irrelevantes"""
+"""Removing irrelevant attributes"""
 
 data.drop(data.columns[50:110], axis=1, inplace=True)
 
-"""Verificando novamente os dados"""
+"""Checking the data again"""
 
 data.head()
 
-"""Analisando Estatísticas da base de dados"""
+"""Analyzing Statistics of the dataset"""
 
 pd.options.display.float_format="{:.2f}".format
 data.describe()
 
-"""Verificando a contagem dos registros por valor"""
+"""Checking the count of records per value"""
 
 data['EXT1'].value_counts()
 
-"""Selecionando o total de registos com valor zero"""
+"""Selecting the total number of records with zero value"""
 
 data[(data==0.00).all(axis=1)].describe()
 
-"""Limpando o Dataframe com apenas registros maiores que zero."""
+"""Cleaning the DataFrame with only records greater than zero."""
 
 data = data[(data > 0.00).all(axis=1)]
 
-"""Verificando a contagem de registros por valor."""
+"""Checking the count of records per value."""
 
 data["EXT1"].value_counts()
 
 !pip install yellowbrick
 
-"""Bibliotecas Machine Learning"""
+"""Machine Learning Libraries"""
 
 from sklearn.cluster import KMeans
 from yellowbrick.cluster import KElbowVisualizer
 
-"""Instanciando o método KMeans e o Vizualizer"""
+"""Instantiating the KMeans method and the Visualizer"""
 
 kmeans = KMeans()
 visualizer = KElbowVisualizer(kmeans, k=(2,10))
 
-"""Selecionando uma amostra aleatória dos dados com 5000 observações."""
+"""Selecting a random sample of data with 5000 observations."""
 
 data_sample = data.sample(n=5000, random_state=1)
 
-"""Executando o teste."""
+"""Running the test."""
 
 visualizer.fit(data_sample)
 visualizer.poof()
 
-"""**Agrupando os participantes em 5 grupos**
+"""**Grouping the participants into 5 clusters**
 
-Atribuindo os registros aos devidos grupos
+Assigning the records to their respective groups
 """
 
 kmeans = KMeans(n_clusters=5)
 k_fit = kmeans.fit(data)
 
-"""Inserindo os rótulos dos clusters no dataframe"""
+"""Inserting the cluster labels into the dataframe"""
 
 predicoes = k_fit.labels_
 data['Clusters'] = predicoes
 
-"""Verificando os dados"""
+"""Checking the data"""
 
 data.head()
 
-"""**Analisando os grupos**
+"""**Analyzing the groups**
 
-Qual a quantidade de observações em cada grupo?
+What is the number of observations in each group?
 """
 
 data["Clusters"].value_counts()
 
-"""Agrupando os registros por grupos"""
+"""Grouping the records by clusters"""
 
 data.groupby('Clusters').mean()
 
-"""Calculando a média de cada grupo de questões para verificar um padrão.
+"""**Calculating the mean of each question group to check for a pattern**.
 
-Selecionando as colunas de cada grupo.
+Selecting the columns for each group
 """
 
 col_list = list(data)
@@ -124,7 +124,7 @@ agr = col_list[20:30]
 csn = col_list[30:40]
 opn = col_list[40:50]
 
-"""Somando os valores de cada grupo"""
+"""Summing the values of each group"""
 
 data_soma = pd.DataFrame()
 data_soma['extroversion'] = data[ext].sum(axis=1)/10
@@ -134,7 +134,7 @@ data_soma['conscientious'] = data[csn].sum(axis=1)/10
 data_soma['open'] = data[opn].sum(axis=1)/10
 data_soma['clusters'] = predicoes
 
-"""Exibindo o valor médio por grupo"""
+"""Displaying the average value per group"""
 
 data_soma.groupby('clusters').mean()
 
